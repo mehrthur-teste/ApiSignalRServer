@@ -13,7 +13,7 @@ namespace ApiSignalRServer.Controllers
     [Route("api/[controller]")]
     public class NotificadorController : Controller
     {
-        private  IHubContext<NotificadorHub> _hub;
+        private  IHubContext<NotificadorHub> _hub ;
 
         public NotificadorController(IHubContext<NotificadorHub> hub) {
             _hub = hub;
